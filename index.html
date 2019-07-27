@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BCM</title>
+
+    <script src="./js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome-all.min.css">
+    <link rel="stylesheet" href="./css/bcm.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-sm-6">
+          <!-- STATUS -->
+          <div id="mode-row" class="row text-center mode-row">
+            <div class="col-sm-12 text-center">
+              MODE:
+              <span id="mode-state" class="">
+                ---
+              </span>
+            </div>
+          </div>
+
+          <!-- MANUAL -->
+          <fieldset>
+            <legend>
+              MANUAL OPTIONS
+            </legend>
+
+            <!-- ROW 1 -->
+            <div class="row text-center no-margin">
+              <div class="col-md-6 btn-row">
+                <button id="pin_18_on" class="btn btn-md btn-success btn-block">PORT A: OPEN</button>
+              </div>
+              <div class="col-md-6 btn-row">
+                <button id="pin_18_off" class="btn btn-md btn-danger btn-block">PORT A: CLOSE</button>
+              </div>
+            </div>
+
+            <!-- ROW 2 -->
+            <div class="row text-center no-margin">
+              <div class="col-md-6 btn-row">
+                <button id="pin_24_on" class="btn btn-md btn-success btn-block">PORT B: OPEN</button>
+              </div>
+              <div class="col-md-6 btn-row">
+                <button id="pin_24_off" class="btn btn-md btn-danger btn-block">PORT B: CLOSE</button>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- RANDOM -->
+          <fieldset>
+            <legend>
+              RANDOM OPTIONS
+            </legend>
+
+            <!-- ROW 1 -->
+            <div class="row text-center">
+              <div class="col-sm-12">
+                <button id="random_easy" class="btn btn-md btn-success btn-block">Random EASY</button>
+              </div>
+            </div>
+
+            <!-- ROW 2 -->
+            <div class="row text-center">
+              <div class="col-sm-12">
+                <button id="random_medium" class="btn btn-md btn-warning btn-block">Random MEDIUM</button>
+              </div>
+            </div>
+
+            <!-- ROW 3 -->
+            <div class="row text-center">
+              <div class="col-sm-12">
+                <button id="random_hard" class="btn btn-md btn-danger btn-block">Random HARD</button>
+              </div>
+            </div>
+
+            <!-- ROW 4 -->
+            <div class="row text-center">
+              <div class="col-sm-12">
+                <button id="random_pain" class="btn btn-md btn-dark btn-block">
+                <i class="fa fa-fire fire" aria-hidden="true"></i>
+                Random PAIN
+              </button>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <!-- STATUS -->
+        <div class="col-sm-6">
+          <button id="reset" class="btn btn-md btn-danger btn-reset">
+          RESET
+        </button>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-sm-12 text-centered">
+          <!-- BCM -->
+          <div id="bcm-img">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bcm.js"></script>
+  </body>
+</html>
